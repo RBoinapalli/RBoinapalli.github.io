@@ -1,16 +1,16 @@
 body {
-background: [pick a color];
+background: [Garnett red];
 font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-color: [pick a font color];
+color: [Black];
 text-align: center;
 }
 .assign {
 display: flex;
 padding: 10px;
 margin: 10px;
-background: [pick a color];
+background: [White];
 }
 .assign img {
 width: 200px;
