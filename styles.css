@@ -1,34 +1,41 @@
 body {
-background: [#addcff];
-font-family: Helvetica;
+ background-color: #AFFF16;
+ font-family: Arial, Helvetica, sans-serif;
+ display: flex;
+ flex-wrap: wrap;
 }
 h1 {
-color: [White];
-text-align: center;
+ color: maroon;
+ text-align: center;
+ width: 100%;
+ display: block;
 }
-.assign {
-display: flex;
-padding: 10px;
-margin: 10px;
-background: [Green];
-}
-.assign img {
-width: 200px;
-padding: 10px;
+h1:hover {
+ color: hotpink;
+ text-align: center;
+ width: 100%;
+ display: block;
 }
 a {
- text-decoration: none; /* remove underlining on anchor tags */
- color: midnightblue; /* pick the color you want */
+ text-decoration: none;
+ color: black;
+}
+assign {
+ background-color: grey;
+ margin: 10px;
+ padding: 10px;
+ border-radius: 20px;
+ width: 20%;
+ box-shadow: 8px 8px brown;
+ display: block; /* instead of flex */
 }
 .assign img {
- padding: 10px; /* change this from margin to padding */
- border: 2px solid midnightblue; /* try dashed, dotted */
+ width: 200px;
+ margin: 10px;
+ border: 2px solid midnightblue;
 }
-.assign {
- border-radius: 20px; /* curved corners */
-}
-Explain a:hover, img:hover, h1:hover
-a:hover {
- text-decoration: none; /* remove underlining on anchor tags */
- color: #adffde; /* pick the color you want */
+.assign img:hover {
+ width: 200px;
+ margin: 10px;
+ border: 2px dotted yellow;
 }
