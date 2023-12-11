@@ -5,7 +5,7 @@ body {
  flex-wrap: wrap;
 }
 h1 {
- color: MediumSeaGreen;
+ color: LightGray;
  text-align: center;
  width: 100%;
  display: block;
@@ -26,7 +26,7 @@ assign {
  padding: 10px;
  border-radius: 20px;
  width: 20%;
- box-shadow: 8px 8px brown;
+ box-shadow: 8px 8px Gray;
  display: block; /* instead of flex */
 }
 .assign img {
