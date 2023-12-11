@@ -18,7 +18,7 @@ h1:hover {
 }
 a {
  text-decoration: none;
- color: Maroon;
+ color: coral;
 }
 assign {
  background-color: LightGrey;
@@ -26,7 +26,7 @@ assign {
  padding: 10px;
  border-radius: 20px;
  width: 20%;
- box-shadow: 8px 8px Gray;
+ box-shadow: 8px 8px LightBlue;
  display: block; /* instead of flex */
 }
 .assign img {
@@ -37,7 +37,7 @@ assign {
 .assign img:hover {
  width: 200px;
  margin: 10px;
- border: 2px dotted yellow;
+ border: 2px dotted HotPink;
 }
 assign {
 width: 20%;
