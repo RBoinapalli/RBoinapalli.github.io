@@ -41,7 +41,7 @@ assign {
 }
 assign {
 width: 20%;
-box-shadow: 8px 8px [coral];
+box-shadow: 8px 8px [BabyPink];
 display: block; /* instead of flex */
 border-radius: 20px; /* set last assignment */
 }
