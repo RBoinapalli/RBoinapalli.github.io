@@ -1,0 +1,45 @@
+/* Structure */
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    background-color: rgb(255, 217, 247); 
+    padding:5px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 10px;
+    
+}
+
+/*Navigation*/
+#main-nav ul{
+    padding-left: 0; /* removes the left padding*/
+    width:fit-content;
+    margin:auto;
+}
+#main-nav li{
+    list-style-type:none; /* no bullets*/
+    display:inline-block; /* appear on one line*/
+}
+#main-nav a{
+    text-decoration: none; /*no underline*/
+    background: lightcoral
+    color: (lightgray);
+    padding:5p;
+    margin:5px;
+    border-radius:2px;
+}
+
+#main-nav a:hover{
+    background-color: black;
+    color: thistle;
+}
+
+/*Typography*/
+h1{
+    color: rgb(240, 66, 50);
+}
+p{
+    color: blue;
+}
