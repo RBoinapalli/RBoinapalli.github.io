@@ -3,7 +3,7 @@ head {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .whole {
-    background-color: #0080FF;
+    background-color: azure;
 }
 nav ul {
     list-style-type: none;
@@ -41,7 +41,7 @@ img {
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #0080FF;
+    background-color: azure;
     margin-top: 20px;
 }
 
@@ -59,7 +59,7 @@ th {
 /* Footer styling */
 footer {
     background-color: #4a90e2;
-    color: #0080FF;
+    color: azure;
     text-align: center;
     padding: 10px;
     margin-top: 20px;
