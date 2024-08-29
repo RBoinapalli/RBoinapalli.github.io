@@ -1,0 +1,59 @@
+/* Structure */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+#main-header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Content*/
+#content-wrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#course-description {
+    margin-bottom: 20px;
+}
+
+#assignments-section {
+    margin-bottom: 20px;
+}
+
+/*Footer*/
+#main-footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Navigation */
+.assignments-list li {
+    margin-bottom: 10px;
+}
+
+.assignments-list a {
+    text-decoration: none;
+    color: #4a90e2;
+}
+
+.assignments-list a:hover {
+    color: #f39c12;
+}
+
