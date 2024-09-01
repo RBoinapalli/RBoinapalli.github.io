@@ -17,30 +17,28 @@ body {
 }
 
 /*Content*/
+#content-container {
+    display: flex;
+    justify-content: space-around; 
+    margin: 20px auto;
+    max-width: 1500px; /* Adjust width as needed */
+}
+
 #content-wrapper {
     background-color: rgba(255, 255, 255, 0.9);
     margin: 20px auto;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 300px;
+    margin: 0 15px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    list-style: none;
 }
 
-#course-description {
-    margin-bottom: 20px;
-}
 
 #assignments-section {
     margin-bottom: 20px;
-}
-
-/*Footer*/
-#main-footer {
-    background-color: #4a90e2;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
 }
 
 /* Navigation */
@@ -57,3 +55,25 @@ body {
     color: #f39c12;
 }
 
+/*Footer*/
+#main-footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    #content-container {
+        flex-direction: column; /* Stack the divs vertically */
+        align-items: center; /* Center the stacked divs */
+    }
+
+    #content-wrapper {
+        margin-bottom: 20px; /* Add space between stacked divs */
+        width: 90%; /* screen width */
+        max-width: 1500 ; /* Remove max-width to allow flexibility */
+    }
+}
