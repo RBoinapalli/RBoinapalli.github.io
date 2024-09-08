@@ -16,46 +16,52 @@ body {
     text-align: center;
 }
 
-/*Content*/
-#content-container {
+
+/* Assignments Container */
+#assignments-container {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     margin: 20px auto;
-    max-width: 1500px; /* Adjust width as needed */
+    max-width: 1500px;
 }
 
-#content-wrapper {
+/* Assignment Wrapper */
+.assignment-wrapper {
     background-color: rgba(255, 255, 255, 0.9);
-    margin: 20px auto;
+    margin: 20px;
     padding: 20px;
     max-width: 300px;
-    margin: 0 15px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    list-style: none; 
+    list-style: none;
 }
 
-
-#assignments-section {
-    margin-bottom: 20px;
+/* Projects Container */
+#projects-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 1500px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation */
-.assignments-list li {
-    margin-bottom: 10px;
+/* Project Wrapper */
+.project-wrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    list-style: none;
 }
 
-.assignments-list a {
-    text-decoration: none;
-    color: #4a90e2;
-}
-
-.assignments-list a:hover {
-    color: #f39c12;
-}
-
-/*Footer*/
+/* Footer */
 #main-footer {
     background-color: #4a90e2;
     color: white;
@@ -66,15 +72,9 @@ body {
 
 /* Media Query */
 @media (max-width: 768px) {
-    #content-container {
-        flex-direction: column; /* Stack the divs vertically */
-        align-items: center; /* Center the stacked divs */
+    #assignments-container, #projects-container {
+        flex-direction: column; /* Stack assignments and projects vertically on small screens */
+        align-items: center;
     }
 
-    #content-wrapper {
-        margin-bottom: 20px; /* Add space between stacked divs */
-        width: 90%; /* screen width */
-        max-width: 1500 ; /* Remove max-width to allow flexibility */
-    }
-    
 }
