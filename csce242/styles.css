@@ -1,17 +1,32 @@
 /* Structure */
+:root{
+    --fircolor:#4a90e2;
+    --seccolor:white;
+    --thicolor:#333;
+    --fifcolor:#f0f0f0;
+    --sixcolor:#ffffffe6;
+    --sevcolor:#EB9E82;
+}
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: var(--fifcolor);
+    color: var(--thicolor);
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
+body li{
+    color:var(--sevcolor);
+}
+body a{
+    text-decoration: none;
+}
+
 
 /* Header */
 #main-header {
-    background-color: #4a90e2;
-    color: white;
+    background-color: var(--fircolor);
+    color: var(--seccolor);
     padding: 20px;
     text-align: center;
 }
@@ -27,12 +42,12 @@ body {
 
 /* Assignment Wrapper */
 .assignment-wrapper {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--sixcolor);
     margin: 20px;
     padding: 20px;
     max-width: 300px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px var(--thicolor);
     text-align: center;
     list-style: none;
 }
@@ -43,28 +58,28 @@ body {
     justify-content: space-around;
     margin: 20px auto;
     max-width: 1500px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--sixcolor);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px var(--thicolor);
 }
 
 /* Project Wrapper */
 .project-wrapper {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--sixcolor);
     margin: 20px;
     padding: 20px;
     max-width: 300px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px var(--thicolor);
     text-align: center;
     list-style: none;
 }
 
 /* Footer */
 #main-footer {
-    background-color: #4a90e2;
-    color: white;
+    background-color: var(--fircolor);
+    color: var(--seccolor);
     text-align: center;
     padding: 10px;
     margin-top: 20px;

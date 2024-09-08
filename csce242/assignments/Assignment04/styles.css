@@ -1,16 +1,24 @@
 /* Structure */
+:root {
+    --fir-color:#000000;
+    --sec-color:#ECECEC;
+    --fou-color:#73000A;
+    --fif-color:#222222;
+    --six-color: #FFFFFF;
+}
 body {
     width: 100%;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
+    
 
 /* Top Navigation Bar */
 .top-nav {
-    background-color: black;
+    background-color: var(--fir-color);
     padding: 10px 20px;
-    color: white;
+    color: var(--six-color);
     position: relative;
 }
 
@@ -18,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    background-color: var(--fir-color);
 }
 
 .nav-list {
@@ -32,7 +41,7 @@ body {
 }
 
 .nav-list li a {
-    color: white;
+    color: var(--six-color);
     text-decoration: none;
     font-size: 8px;
 }
@@ -45,16 +54,16 @@ body {
 
 .search-bar input {
     padding: 5px;
-    border: 1px solid white;
+    border: 1px solid var(--six-color);
     border-radius: 3px;
-    background-color: black;
-    color: white;
+    background-color: var(--fir-color);
+    color: var(--six-color);
     font-size: 12px;
 }
 
 /* University Logo and Title */
 .columns-all {
-    background: black;
+    background: var(--fir-color);
     display: flex;
     align-items: center;
     padding: 15px 20px;
@@ -72,13 +81,13 @@ body {
 
 .columns-all h1,
 .columns-all h3 {
-    color: white;
+    color: var(--six-color);
     margin: 0;
 }
 
 /* Main Navigation Bar */
 .main-nav {
-    background-color: #7c0e14;
+    background-color: var(--fou-color);
     padding: 10px 20px;
 }
 
@@ -96,16 +105,16 @@ body {
 }
 
 .main-nav-list li a {
-    color: white;
+    color: var(--six-color);
     text-decoration: none;
     font-size: 14px;
 }
 
-/* Hero Section */
+/* Show Section */
 .show-section {
     position: relative;
     text-align: center;
-    color: white;
+    color: var(--six-color);
 }
 
 .show-section img {
@@ -118,7 +127,7 @@ body {
     bottom:-10%;
     left: 50%;
     transform: translateX(-90%);
-    background-color: #7c0e14;
+    background-color: var(--fou-color);
     padding: 10px 20px;
 }
 
@@ -130,18 +139,21 @@ body {
 }
 
 .sub-text {
-    background: white;
-    color:black;
+    background: var(--six-color);
+    color:var(--fif-color);
     width: 50%;
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin:auto;
     text-align: left;
 
 }
 
+/*Split Screen Section*/
+
 .split-screen {
-    background: #7c0e14;
-    color: white;
+    background: var(--fou-color);
+    color: var(--six-color);
     display: flex;
     margin: 0%;
     padding: 0%;
@@ -156,34 +168,52 @@ body {
 }
 
 .req0-bar {
-    padding: 5px;
-    border: 1px solid white;
+    padding: 1px;
+    border: 1px solid var(--six-color);
     border-radius: 3px;
-    background: black;
-    color: white;
+    background: var(--fir-color);
+    color: var(--six-color);
     font-size: 18px;
     display: block;
+    width:50%;
     text-align: center;
 }
+
+/*Educational Investment Section*/
 
 .sec_3 {
     text-align: center;
     padding:0%;
-    margin:0%;
-    background: #ECECEC;
+    margin-top:0%;
+    background: var(--sec-color);
+    color:var(--fou-color);
+    
 
+}
+#separate {
+    color:var(--fif-color);
 }
 
 .req1-bar {
     padding: 5px;
     max-width: fit-content;
     border-radius: 3px;
-    background: #7c0e14;
-    color: white;
+    background: var(--fou-color);
+    color: var(--six-color);
     font-size: 12px;
     display: block;
     position: absolute;
     right: 43%;
+}
+
+/*Paying for School Section*/
+
+.sec_4{
+    padding-bottom: 0%;
+}
+.pt1 h1{
+    color: var(--fou-color);
+    font-size: 40px;
 }
 
 .pt1 {
@@ -191,40 +221,155 @@ body {
     padding:10%;
 }
 
+/*Column section*/
+
 .one{
     width:25%;
+}
+
+.one h3{
+    color: var(--fou-color);
 }
 
 .one img {
     text-align: center;
 }
 .table {
-    background: white;
+    background: var(--six-color);
     display: flex;
+    justify-content: space-evenly;
+    padding-left: 15%;
+    padding-right: 15%;
 
 }
 
+/*Next Step Section*/
+
 .sec_5 {
+    
     padding: 5px;
-    border: 1px solid white;
+    border: 1px solid var(--six-color);
     border-radius: 3px;
-    background: black;
-    color: white;
+    background: var(--fir-color);
+    color: var(--six-color);
     font-size: 18px;
     display: block;
-    text-align: center;
+    text-align: left;
     display: flex;
+}
+.sec_5 img{
+    padding-left: 15%;
+    padding-right: 2%;
 }
 
 .req2_bar {
-    padding: 5px;
-    border: 1px solid white;
+    padding-top: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 3px solid var(--six-color);
     border-radius: 3px;
-    background: #7c0e14;
-    color: white;
-    font-size: 18px;
+    background: var(--fou-color);
+    color: var(--six-color);
     display: block;
     position: absolute;
-    right:30%;
+    left:37%;
     width: fit-content;
+}
+
+/*Table Section*/
+
+
+
+.columns-a{
+    display: inline-flex;
+    background: var(--fou-color);
+    width: 100%;
+    color: var(--six-color);
+    margin: 0;
+    padding: 0;
+}
+
+.sec_6{
+    background: (var(--fou-color));
+    color:(var(--six-color));
+
+}
+#wrap{
+    background-color: var(--fou-color);
+    color: var(--six-color);
+    justify-content: space-evenly;
+    margin: 0%;
+    display: inline-block;
+    font-size: 13px;
+    padding-right: 0%;
+}
+#wrap2{
+    padding-right: 28%;
+    background-color: var(--fou-color);
+    color: var(--six-color);
+    justify-content: space-evenly;
+    margin: 0%;
+    display: inline-block;
+    font-size: 13px;
+    
+}
+
+.footer-gateway-and-search {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--fir-color);
+    padding-left: 15%;
+    font-size: 15px;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .top-nav{
+        display: none;
+    }
+    .main-nav{
+        display: none;
+    }
+    
+
+    .split-screen{
+        display: flex;
+        flex-direction: column;
+    }
+    .split-right{
+        padding-left: 30%;
+        text-align: center;
+    }
+
+    .req0-bar{
+        text-align: center;
+        padding-right: 27%;
+    }
+    
+    .table{
+        display: flex;
+        flex-direction: column;
+    }
+    .table h3 {
+        padding-left:50%;
+        width:200%;
+    }
+    .table p{
+        padding-left:50%;
+        width:200%;
+    }
+
+    .sec_5{
+        display:flex;
+        
+    }
+    .sec_5 img{
+        width:30%;
+        height:30%;
+    }
+    .req2_bar{
+        left:10%;
+        Bottom:-556%;
+    }
 }
