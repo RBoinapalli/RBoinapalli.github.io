@@ -39,6 +39,12 @@ body a{
     margin: 20px auto;
     max-width: 1500px;
 }
+#assignments-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 
 /* Assignment Wrapper */
 .assignment-wrapper {
@@ -51,6 +57,21 @@ body a{
     text-align: center;
     list-style: none;
 }
+.assignment-wrapper {
+    width: 48%;
+    margin-bottom: 20px;
+}
+.assignment-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.assignment-wrapper {
+    overflow: hidden;
+    text-align: center; /* To center the image horizontally */
+}
+
 
 /* Projects Container */
 #projects-container {
@@ -85,11 +106,14 @@ body a{
     margin-top: 20px;
 }
 
+
+
 /* Media Query */
 @media (max-width: 768px) {
     #assignments-container, #projects-container {
         flex-direction: column; /* Stack assignments and projects vertically on small screens */
         align-items: center;
     }
+   
 
 }
