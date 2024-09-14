@@ -35,54 +35,41 @@ body a{
 /* Assignments Container */
 #assignments-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px auto;
-    max-width: 1500px;
+    max-width: 1200px;  /* Set a max-width for the container */
+    padding: 0 10px;    /* Add padding to prevent overflow */
 }
-#assignments-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 
 /* Assignment Wrapper */
 .assignment-wrapper {
     background-color: var(--sixcolor);
     margin: 20px;
     padding: 20px;
+    flex: 1 1 300px;   /* Allow the items to be flexible and wrap */
     max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 0 15px var(--thicolor);
     text-align: center;
     list-style: none;
 }
-.assignment-wrapper {
-    width: 48%;
-    margin-bottom: 20px;
-}
+
+/* Adjusting Images */
 .assignment-wrapper img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-.assignment-wrapper {
-    overflow: hidden;
-    text-align: center; /* To center the image horizontally */
-}
-
-
 /* Projects Container */
 #projects-container {
     display: flex;
+    flex-wrap: wrap;  /* Ensure projects also wrap */
     justify-content: space-around;
     margin: 20px auto;
-    max-width: 1500px;
-    background-color: var(--sixcolor);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px var(--thicolor);
+    max-width: 1200px;  /* Similar max-width for projects */
+    padding: 0 10px;
 }
 
 /* Project Wrapper */
@@ -90,6 +77,7 @@ body a{
     background-color: var(--sixcolor);
     margin: 20px;
     padding: 20px;
+    flex: 1 1 300px;   /* Flex property to make it responsive */
     max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 0 15px var(--thicolor);
@@ -97,23 +85,16 @@ body a{
     list-style: none;
 }
 
-/* Footer */
-#main-footer {
-    background-color: var(--fircolor);
-    color: var(--seccolor);
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-
-
 /* Media Query */
 @media (max-width: 768px) {
     #assignments-container, #projects-container {
         flex-direction: column; /* Stack assignments and projects vertically on small screens */
         align-items: center;
+        padding: 0 20px;
     }
-   
 
+    .assignment-wrapper, .project-wrapper {
+        width: 100%;  /* Take full width on small screens */
+        max-width: 90%;
+    }
 }
