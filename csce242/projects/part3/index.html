@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global IT Consultants</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Logo.jpg" alt="Global IT Consultants Logo">
+            <h1>Global IT Consultants</h1>
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="openTab(event, 'home')">Home</a></li>
+                <li><a href="#about-us" onclick="openTab(event, 'about-us')">About Us</a></li>
+                <li><a href="#services" onclick="openTab(event, 'services')">Services</a></li>
+                <li><a href="#jobs" onclick="openTab(event, 'jobs')">Jobs</a></li>
+                <li><a href="#admin" onclick="openTab(event, 'admin')">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Tab -->
+    <div id="home" class="tab-content active">
+        <img src="https://place-hold.it/1570x500">
+        <h2>Welcome to Global IT Consultants</h2>
+        <p>We are thinking to improve your products.</p>
+
+        <h2>What Sets Us Apart</h2>
+        <ul>
+            <li><p>Real-world-tested strategies, methods and programs</p></li> 
+            <li> <p>True collaboration, from strategy to execution to ongoing management</p></li>
+            <li><p>Data-driven insights that uncover growth opportunities</p></li>
+            <li><p>Practice leaders with decades of experience.</p></li>
+        </ul>
+    </div>
+
+    <!-- About Us Tab -->
+    <div id="about-us" class="tab-content">
+        <h2>About Us</h2>
+        <img src="https://place-hold.it/1570x500">
+
+        <h3> Our Vision</h3>
+        <p>We are global innovative company that combines information technology expertise with technology to improve your business goals and to fulfil end user needs.</p>
+    
+        <h3>Our Mission</h3>
+        <p>We are providing good career growth for the information technology expertise. To fulfil expertise desires according to their creative thoughts and ideas for business needs.</p>
+
+        <h3> Our Goals</h3>
+        <p>We are achieving to improve User problems, Business solutions, Products pain points and motivations. We adopted new updated artificial technology trends, and transform their business.</p>
+    </div>
+
+
+    <!-- Services Tab -->
+    <div id="services" class="tab-content">
+        <h2>Our Services</h2>
+        <p>We offer a variety of IT services to meet your business needs.</p>
+        <img src="https://place-hold.it/1570x500">
+        <ul>
+            <li>Business Strategy Development</li>
+            <li>Financial Planning and Analysis</li>
+            <li>Digital Transformation Consulting</li>
+            <li>Market Research and Analysis</li>
+            <li>Operational Efficiency Improvement</li>
+            <li>Risk Management Solutions</li>
+        </ul>
+    </div>
+
+    <!-- Jobs Tab -->
+    <div id="jobs" class="tab-content">
+        <h2>Jobs</h2>
+        <p>We are hiring! Apply for one of our open positions below.</p>
+        <img src="https://place-hold.it/1570x500">
+
+        <ul>
+            <li>Network Engineer </li>
+            <li>Java Full Stack Developer </li>
+            <li>Flutter Developer </li>
+            <li>Full Stack Developer </li>
+            <li>Data Analyst</li>
+            <li>Database developer</li>
+            <li>Cyber Security </li>
+            <li>Android Developer </li>
+        </ul>
+    </div>
+
+    <!-- Admin Tab -->
+    <div id="admin" class="tab-content">
+        <h2>Admin Panel</h2>
+        <p>Manage jobs and services here.</p>
+        <form>
+            <!-- Your Admin Form Here -->
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* Define CSS Variables */
+:root {
+    --primary-bg-color: #f0f0f0;
+    --secondary-bg-color: #fff;
+    --primary-text-color: #000;
+    --secondary-text-color: #333;
+    --accent-color: #666;
+    --border-color: #ccc;
+}
+
+/* General styles for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: var(--secondary-bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    padding: 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-bg-color);
+}
+
+/* Logo and Navigation Alignment */
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--secondary-bg-color);
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--primary-text-color);
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--primary-text-color);
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--border-color);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+
+/* Form Styles in Admin Section */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    color: var(--primary-text-color);
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-bg-color);
+}
+
+form button {
+    padding: 10px;
+    background-color: var(--primary-text-color);
+    color: var(--secondary-bg-color);
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none; /* Initially hide the navbar */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--secondary-bg-color);
+        z-index: 1000;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Display hamburger menu icon */
+    .menu-icon {
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+}
+
+/* When the menu is active, display the nav */
+nav.active ul {
+    display: flex;
+}
