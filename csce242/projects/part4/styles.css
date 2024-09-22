@@ -1,0 +1,461 @@
+/* Global Styles */
+:root {
+    --global-white: white;
+    --global-bg: #f5f0ff; /* Background Color */
+    --global-text: #4a004e; /* Text Color */
+    --global-header-bg: #e599f7; /* Header Background */
+    --global-nav-bg: #9d4edd; /* Navigation Button Background */
+    --global-nav-hover: #ff85c0; /* Navigation Hover Color */
+    --global-banner-start: #ff87ab; /* Banner Gradient Start */
+    --global-badge-bg: #fbe5ff; /* Badge Background */
+    --global-badge-border: #e0aaff; /* Badge Border */
+    --global-modal-bg: #fff; /* Modal Background */
+    --global-button-bg: #c53da0; /* Button Background */
+    --global-button-hover: #9b3487; /* Button Hover Color */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--global-bg);
+    color: var(--global-text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+    color: var(--global-text);
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--global-text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header & Navigation */
+header {
+    background-color:var(--global-header-bg);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: var(--global-modal-bg);
+    font-size: 2em;
+}
+
+nav {
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--global-modal-bg);
+    background-color: var(--global-nav-bg);
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: var(--global-nav-hover);
+}
+
+/* Hamburger Menu */
+.nav-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color:var(--global-white);
+    background: none;
+    border: none;
+}
+
+/* Banner Section */
+.banner {
+    background: linear-gradient(to bottom, var(--global-banner-start),  var(--global-nav-bg));
+    color:var(--global-modal-bg);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+}
+
+/* Info Section (index.html) */
+.info {
+    text-align: center;
+    padding: 50px;
+}
+
+.info h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.badges {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.badge {
+    background-color: var(--global-badge-bg);
+    border: 2px solid var(--global-badge-border);
+    border-radius: 15px;
+    padding: 20px;
+    width: 20%;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.badge:hover {
+    transform: scale(1.05);
+}
+
+.badge h1 {
+    font-size: 3rem;
+    color: #ff77e9;
+}
+
+.badge p {
+    font-size: 1.2rem;
+}
+
+/* About Us Page */
+.about-banner {
+    background-color:var(--global-header-bg);
+    color: var(--global-modal-bg);
+    text-align: center;
+    padding: 40px;
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.vision, .mission, .goal {
+    width: 30%;
+    background-color: var(--global-badge-bg);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vision h1, .mission h1, .goal h1 {
+    font-size: 3rem;
+    color: var(--global-banner-start);
+}
+
+.vision h4, .mission h4, .goal h4 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+/* Services Page */
+.services-banner {
+    background-color:  var(--global-nav-bg);
+    color: var(--global-modal-bg);
+    text-align: center;
+    padding: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.services-content {
+    width: 60%;
+}
+
+.dropdown {
+    margin-bottom: 20px;
+}
+
+.dropdown-btn {
+    background-color: var(--global-header-bg);
+    color: var(--global-modal-bg);
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+    background-color: var(--global-banner-start);
+}
+
+.dropdown-content {
+    background-color: var(--global-badge-bg);
+    padding: 10px;
+    display: none;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.services-image {
+    width: 35%;
+    text-align: center;
+}
+
+.services-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Jobs Page */
+.jobs-banner {
+    background-color:  var(--global-nav-bg);
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+.jobs-list {
+    padding: 40px;
+}
+
+.job {
+    background-color: var(--global-badge-bg);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.job-details {
+    display: none;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.apply-btn {
+    background-color: var(--global-header-bg);
+    color: var(--global-modal-bg);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: var(--global-nav-hover);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--global-modal-bg);
+    padding: 40px;
+    border-radius: 15px;
+    width: 40%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--global-nav-hover);
+}
+
+.modal h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.modal button {
+    background-color:  var(--global-nav-bg);
+    color: var(--global-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    background-color: var(--global-banner-start);
+}
+
+/* Footer */
+footer {
+    background-color: var(--global-nav-bg);
+    color: var(--global-white);
+    text-align: center;
+    padding: 15px;
+}
+
+/* Admin section styling */
+#admin {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--global-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#admin h2 {
+    text-align: center;
+    color: var(--global-button-bg); /* Vibrant pink for headings */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#admin h3 {
+    color: #8e44ad; /* Dark violet */
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+form label {
+    color: #6c3483; /* Soft violet label */
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #e1a3db; /* Pink border */
+    border-radius: 10px;
+    background-color: #f8f0fa; /* Very light pink input background */
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: var(--global-button-bg); /* Darker pink focus effect */
+    outline: none;
+}
+
+/* Button styles */
+form button {
+    background-color: var(--global-button-bg); /* Vibrant pink */
+    color: var(--global-white);
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--global-button-hover); /* Darker violet on hover */
+}
+
+/* Additional spacing */
+section {
+    margin-bottom: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .banner h2 {
+        font-size: 2.2rem;
+    }
+
+    .badges, .about-info, .services-container {
+        flex-direction: column;
+    }
+
+    .badge, .vision, .mission, .goal {
+        width: 80%;
+    }
+
+    .services-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-toggle {
+        display: inline-block;
+    }
+
+    .badge {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .services-content, .services-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
