@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --fircolor:#f0f0f0;
+    --seccolor:#f1f2e9;
+    --thircolor:white;
+    --foucolor:#2f4f4f;
+    --fifcolor:black;
+    --sixcolor:#ccc;
+    --sevcolor:yellow;
+    --eigcolor: #5d878c;
+    --nincolor:#d98282;
+    --tencolor:gray;
+    --elecolor:red;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:var(--fircolor);
+}
+
+.container {
+    text-align: center;
+    background-color:var(--seccolor);
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+}
+
+/* Olive-colored border around the black box */
+.olive-box {
+    background-color: var(--foucolor);
+    padding: 15px;
+    display: inline-block;
+    color: var(--thircolor);
+}
+
+/* Black canvas area */
+#canvas {
+    overflow: hidden;
+    margin: 20px auto;
+    width: 400px;
+    height: 400px;
+    background-color: var(--fifcolor);
+    position: relative;
+    border: 2px solid var(--sixcolor);
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: var(--sevcolor);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    cursor: pointer;
+}
+
+h1 {
+    color: var(--eigcolor);
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--nincolor);
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    height: 4px;
+    width: 80px;
+    
+    
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: var(--tencolor);
+    color:var(--fifcolor);
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--thircolor);
+}
+
+#error-msg {
+    color: var(--elecolor);
+    font-size: 1rem;
+    margin-top: 10px;
+    display: none;
+}
+
+#star-msg {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: var(--eigcolor);
+    display: none;
+}

@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#imageContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+#imageContainer img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ddd;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#descriptionContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+section {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
