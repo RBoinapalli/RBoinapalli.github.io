@@ -1,11 +1,11 @@
 // JavaScript to handle the array of images and descriptions
 const images = [
-    { src: "image1.png", title: "Party Hat", description: "This stick figure is wearing a party hat and celebrating." },
-    { src: "image2.png", title: "Ballet Dancer", description: "A stick figure ballerina, ready for performance." },
-    { src: "image3.png", title: "Umbrella Holder", description: "A stick figure holding an umbrella, ready for the rain." },
-    { src: "image4.png", title: "Book Reader", description: "A stick figure reading a book, focused and calm." },
-    { src: "image5.png", title: "Gardener", description: "A stick figure with a shovel, preparing to garden." },
-    { src: "image6.png", title: "Laptop User", description: "A stick figure sitting with a laptop, working remotely." }
+    { src: "images/birthday.jpg", title: "Party Hat", description: "This stick figure is wearing a party hat and celebrating." },
+    { src: "images/clown.jpg", title: "Clown", description: "A stick figure with clown nose, ready for performance." },
+    { src: "images/rain.jpg", title: "Umbrella Holder", description: "A stick figure holding an umbrella, ready for the rain." },
+    { src: "images/read.jpg", title: "Book Reader", description: "A stick figure reading a book, focused and calm." },
+    { src: "images/shovel.jpg", title: "Gardener", description: "A stick figure with a shovel, preparing to garden." },
+    { src: "images/work.jpg", title: "Laptop User", description: "A stick figure sitting with a laptop, working remotely." }
 ];
 
 // Function to load images into the container
