@@ -1,19 +1,30 @@
 /* General Page Styling */
+:root{
+    --fircolor: #f5f5dc;
+    --seccolor:  #4c6c6e;
+    --thircolor: #f08080;
+    --foucolor: #ccd7d6;
+    --fifcolor: white;
+    --sixcolor:  rgba(0, 0, 0, 0.1);
+    --sevcolor:  #006699;
+    --eigcolor:#f1f2e9;
+
+}
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5dc;
+    background-color: var(--eigcolor);
     margin: 0;
     padding: 20px;
 }
 
 h1 {
     text-align: center;
-    color: #4c6c6e;
+    color: var(--seccolor);
 }
 
 h2 {
     text-align: center;
-    color: #f08080;
+    color: var(--thircolor);
 }
 
 /* Description Styling */
@@ -21,8 +32,10 @@ h2 {
     text-align: center;
     padding: 10px;
     font-size: 18px;
-    color: #4c6c6e;
+    color: var(--seccolor);
     font-weight: bold;
+    border: 2px solid var(--seccolor);
+    background-color: var(--fircolor);
 }
 
 /* Image Container Styling */
@@ -32,17 +45,19 @@ h2 {
     gap: 20px;
     padding: 20px;
     justify-items: center;
+    border: 2px solid var(--seccolor);
+    background-color: var(--fircolor);
 }
 
 /* Individual Image Styling */
 #imageContainer img {
     width: 150px; /* Adjust the size of each image */
     height: auto;
-    border: 2px solid #ccd7d6;
+    border: 2px solid var(--foucolor);
     padding: 10px;
     border-radius: 5px;
-    background-color: white;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--fifcolor);
+    box-shadow: 2px 2px 8px var(--sixcolor);
     transition: transform 0.3s ease;
 }
 
@@ -53,13 +68,15 @@ h2 {
 
 /* Freepik Image Credit Styling */
 section {
-    text-align: center;
+    text-align: left;
     padding-top: 20px;
+    border: 2px solid var(--seccolor);
+    background-color: var(--fircolor);
 }
 
 a {
     text-decoration: none;
-    color: #006699;
+    color: var(--sevcolor);
     font-weight: bold;
 }
 
