@@ -1,4 +1,3 @@
-// JavaScript to handle the array of images and descriptions
 const images = [
     { src: "images/birthday.jpg", title: "Party Hat", description: "This stick figure is wearing a party hat and celebrating." },
     { src: "images/clown.jpg", title: "Clown", description: "A stick figure with clown nose, ready for performance." },
@@ -8,26 +7,35 @@ const images = [
     { src: "images/work.jpg", title: "Laptop User", description: "A stick figure sitting with a laptop, working remotely." }
 ];
 
-// Function to load images into the container
+// Array to store image elements
+const imageElements = [];
+
+// Function to load images into the container using a loop
 const loadImages = () => {
     const container = document.getElementById('imageContainer');
-    images.forEach((img, index) => {
+    for (let i = 0; i < images.length; i++) {
         const imageElement = document.createElement('img');
-        imageElement.src = img.src;
-        imageElement.alt = img.title;
-        imageElement.addEventListener('click', () => displayDescription(index));
+        imageElement.src = images[i].src;
+        imageElement.alt = images[i].title;
+        imageElement.addEventListener('click', () => displayDescription(i));
         container.appendChild(imageElement);
-    });
+        imageElements.push(imageElement); // Store the image element in the array
+    }
 };
 
-// Function to display the description when an image is clicked
+// Function to display the description using arrays and if-else
 const displayDescription = (index) => {
     const descriptionContainer = document.getElementById('descriptionContainer');
-    descriptionContainer.innerHTML = `
-        <h3>${images[index].title}</h3>
-        <p>${images[index].description}</p>
-    `;
+    if (index >= 0 && index < images.length) {
+        const selectedImage = images[index];
+        descriptionContainer.innerHTML = `
+            <h3>${selectedImage.title}</h3>
+            <p>${selectedImage.description}</p>
+        `;
+    } else {
+        descriptionContainer.innerHTML = '<p>No description available.</p>';
+    }
 };
 
-// Load images on page load
-window.onload = loadImages;
+// Load images on page load using an arrow function
+window.onload = () => loadImages();
