@@ -1,0 +1,97 @@
+:root {
+    --fircolor--:#F1F2E9;
+    --seccolor--:#5d878c;
+    --thicolor--:#d98282;
+    --fifcolor--:#add8e6;
+    --foucolor--:white;
+    --sixcolor--:gray;
+    --sevcolor--:black;
+
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fircolor--);
+    text-align: center;
+}
+h1 {
+    color: var(--seccolor--) ;
+}
+
+h2 {
+    color: var(--thicolor--);
+}
+
+h3 {
+    color:var(--foucolor--);
+}
+
+p {
+    color: var(--seccolor--);
+}
+.bird-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+
+.bird-card {
+    background-color: var(--fifcolor--);
+    width: 200px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bird-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bird-card h3 {
+    margin-top: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: var(--foucolor--);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--sixcolor--);
+    width: 60%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.modal-content img {
+    width: 200px;
+    float: right;
+    margin-left: 20px;
+}
+
+.close {
+    color: var(--sixcolor--);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: var(--sevcolor--);
+    text-decoration: none;
+    cursor: pointer;
+}
