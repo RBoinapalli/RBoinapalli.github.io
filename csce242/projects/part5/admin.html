@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global IT Consultants - Admin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src = "images/logo.png">
+            <h1>Global IT Consultants</h1>
+        </div>
+        <nav>
+            <button class="nav-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="admin">
+        <h2>Admin Panel</h2>
+
+        <!-- Form to add new job -->
+        <h3>Add a Job</h3>
+        <form id="add-job-form">
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job-title" required>
+            
+            <label for="job-desc">Roles and Responsibilities:</label>
+            <textarea id="job-desc" name="job-desc" required></textarea>
+            
+            <button type="submit">Add Job</button>
+        </form>
+
+        <!-- Form to remove a job -->
+        <h3>Remove a Job</h3>
+        <form id="remove-job-form">
+            <label for="remove-title">Job Title to Remove:</label>
+            <input type="text" id="remove-title" name="remove-title" required>
+            
+            <button type="submit">Remove Job</button>
+        </form>
+    </section>
+
+    <script src="admin.js"></script>
+</body>
+</html>
