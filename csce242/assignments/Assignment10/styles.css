@@ -1,0 +1,72 @@
+
+:root {
+    --fircolor--:#fff6e8;
+    --seccolor--:#482525;
+    --thicolor--:#f48fb1;
+    --foucolor--:rgba(0, 0, 0, 0.5);
+    --fifcolor--:white;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fircolor--); /* Light cream background */
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5em;
+    color: var(--thicolor--); /* Pinkish color */
+    margin: 20px 0;
+  }
+  
+  .ice-cream-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .ice-cream-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .ice-cream-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .ice-cream-item:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:var(--foucolor--); /* Semi-transparent black background */
+    color: var(--fifcolor--);
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .ice-cream-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color:  var(--seccolor--);
+  }
+  
