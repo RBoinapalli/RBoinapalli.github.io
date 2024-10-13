@@ -33,11 +33,12 @@ class Bird {
             </div>`;
     }
 }
-const birds = [
+const birds = [ 
     new Bird("Hummingbird", "2.5 inches", "3-5 years", "Nectar (Sugar water)", "Trees", "They're nicknamed 'Hummers'", "images/Hummingbird.png"),
     new Bird("Blue Jay", "9-12 inches", "7 years", "Nuts, seeds, insects", "Forests", "Blue Jays are great mimics!", "images/Bluejay.png"),
     new Bird("Cardinal", "8-9 inches", "3 years", "Seeds, fruits", "Woodlands", "They sing in the morning!", "images/Cardinal.png"),
     new Bird("Robin", "10 inches", "2 years", "Worms, berries", "Gardens", "Often seen in snowy weather!", "images/Robin.png")
+    
 ];
 
 const birdList = document.getElementById('bird-list');
