@@ -19,11 +19,7 @@ document.querySelectorAll('.dropdown-btn').forEach(button => {
     });
 });
 
-// Function to toggle job details
-const toggleJobDetails = (jobId) => {
-    const jobDetails = document.getElementById(jobId);
-    jobDetails.style.display = jobDetails.style.display === 'block' ? 'none' : 'block';
-};
+
 
 // Function to open the apply form modal
 const openApplyForm = (jobTitle) => {
@@ -60,8 +56,9 @@ const closeThankYou = () => {
     thankYouModal.style.display = 'none';
 };
 
+
 const getJobs = async () => {
-    const url = "httjobs.json"; // Update with the correct path
+    const url = "https://github.com/RBoinapalli/RBoinapalli.github.io/blob/main/csce242/projects/part6/jobs.json"; 
 
     try {
         const response = await fetch(url);
@@ -96,13 +93,45 @@ const getJobSection = (job) => {
     const detailsDiv = document.createElement("div");
     detailsDiv.id = job.id;
     detailsDiv.classList.add("job-details");
-    detailsDiv.innerHTML = `<p>${job.description}</p>`;
+    detailsDiv.style.display = "none"; // Initially hidden
+
+    // Add description
+    const descriptionP = document.createElement("p");
+    descriptionP.innerHTML = job.description;
+    detailsDiv.appendChild(descriptionP);
     
+    // Add requirements
+    const requirementsH5 = document.createElement("h5");
+    requirementsH5.innerHTML = "Requirements:";
+    detailsDiv.appendChild(requirementsH5);
+    
+    const requirementsUl = document.createElement("ul");
+    job.requirements.forEach((req) => {
+        const li = document.createElement("li");
+        li.innerHTML = req;
+        requirementsUl.appendChild(li);
+    });
+    detailsDiv.appendChild(requirementsUl);
+    
+    // Add salary
+    const salaryP = document.createElement("p");
+    salaryP.innerHTML = `Salary: ${job.salary}`;
+    detailsDiv.appendChild(salaryP);
+
+    // Add location
+    const locationP = document.createElement("p");
+    locationP.innerHTML = `Location: ${job.location}`;
+    detailsDiv.appendChild(locationP);
+
+    // Add apply button
     const applyBtn = document.createElement("button");
     applyBtn.classList.add("apply-btn");
     applyBtn.innerHTML = "Apply";
-    applyBtn.onclick = () => openApplyForm(job.applyTitle);
-    
+    applyBtn.onclick = (event) => {
+        event.stopPropagation(); // Prevents toggle on button click
+        openApplyForm(job.applyTitle);
+    };
+
     detailsDiv.appendChild(applyBtn);
     jobDiv.appendChild(detailsDiv);
 
