@@ -58,7 +58,7 @@ const closeThankYou = () => {
 
 
 const getJobs = async () => {
-    const url = "https://github.com/RBoinapalli/RBoinapalli.github.io/blob/main/csce242/projects/part6/jobs.json"; 
+    const url = `https://RBoinapalli.github.io/csce242/projects/part6/jobs.json`; 
 
     try {
         const response = await fetch(url);
@@ -81,9 +81,9 @@ const getJobSection = (job) => {
     jobDiv.classList.add("job");
     jobDiv.setAttribute("onclick", `toggleJobDetails('${job.id}')`);
 
+    //Add image
     const img = document.createElement("img");
-    img.src = job.image;
-    img.alt = `${job.title} Image`;
+    img.src = `https://RBoinapalli.github.io/csce242/projects/part6/images/${job.img}`;
     jobDiv.append(img);
 
     const title = document.createElement("h4");
@@ -100,18 +100,18 @@ const getJobSection = (job) => {
     descriptionP.innerHTML = job.description;
     detailsDiv.appendChild(descriptionP);
     
-    // Add requirements
-    const requirementsH5 = document.createElement("h5");
-    requirementsH5.innerHTML = "Requirements:";
-    detailsDiv.appendChild(requirementsH5);
+    // Add skills
+    const skillsH5 = document.createElement("h5");
+    skillsH5.innerHTML = "Skills:";
+    detailsDiv.appendChild(skillsH5);
     
-    const requirementsUl = document.createElement("ul");
-    job.requirements.forEach((req) => {
+    const skillsUl = document.createElement("ul");
+    job.skills.forEach((skill) => {
         const li = document.createElement("li");
-        li.innerHTML = req;
-        requirementsUl.appendChild(li);
+        li.innerHTML = skill;
+        skillsUl.appendChild(li);
     });
-    detailsDiv.appendChild(requirementsUl);
+    detailsDiv.appendChild(skillsUl);
     
     // Add salary
     const salaryP = document.createElement("p");

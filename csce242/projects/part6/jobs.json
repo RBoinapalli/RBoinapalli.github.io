@@ -1,7 +1,7 @@
 [
     {
         "_id": 1,
-        "img_name": "images/network-engineer.jpg",
+        "img": "network-engineer.jpg",
         "title": "Network Engineer",
         "description": "Expertise in next-generation firewalls, AWS, and Azure environments. Strong communication skills.",
         "skills": ["Palo Alto", "Zscaler", "AWS", "Azure", "Firewall Policies"],
@@ -11,7 +11,7 @@
     },
     {
         "_id": 2,
-        "img_name": "images/java-fullStack-dev.png",
+        "img": "java-fullStack-dev.png",
         "title": "Java Full Stack Developer",
         "description": "Analyze functional requirements, design microservices architecture, and deploy applications.",
         "skills": ["Java", "Spring", "React", "Angular", "Microservices"],
@@ -21,7 +21,7 @@
     },
     {
         "_id": 3,
-        "img_name": "images/flutter-dev.png",
+        "img": "flutter-dev.png",
         "title": "Flutter Developer",
         "description": "Develop applications using Flutter framework with a focus on payment integration processes.",
         "skills": ["Flutter", "Dart", "iOS", "Android", "CI/CD"],
@@ -31,7 +31,7 @@
     },
     {
         "_id": 4,
-        "img_name": "images/data-analyst.jpg",
+        "img": "data-analyst.jpg",
         "title": "Data Analyst",
         "description": "Analyze data using statistical techniques and build machine learning models.",
         "skills": ["Python", "SQL", "Machine Learning", "Data Visualization", "Mentoring"],
@@ -41,7 +41,7 @@
     },
     {
         "_id": 5,
-        "img_name": "images/full-stack-dev.jpg",
+        "img": "full-stack-dev.jpg",
         "title": "Full Stack Developer",
         "description": "Develop large-scale web applications using React and AWS.",
         "skills": ["React", "Node.js", "AWS", "SQL", "Version Control"],
@@ -51,7 +51,7 @@
     },
     {
         "_id": 6,
-        "img_name": "images/database-dev.jpg",
+        "img": "database-dev.jpg",
         "title": "Database Developer",
         "description": "Write complex SQL queries and ensure optimal database performance.",
         "skills": ["SQL", "Data Modeling", "Performance Tuning", "RDBMS"],
@@ -61,7 +61,7 @@
     },
     {
         "_id": 7,
-        "img_name": "images/cybersecurity.png",
+        "img": "cybersecurity.png",
         "title": "Cyber Security Specialist",
         "description": "Handle security compliance and IAM services in a hybrid cloud environment.",
         "skills": ["ISO 27001", "IAM", "Hybrid Cloud", "Compliance"],
@@ -71,7 +71,7 @@
     },
     {
         "_id": 8,
-        "img_name": "images/android-dev.png",
+        "img": "android-dev.png",
         "title": "Android Developer",
         "description": "Design and build mobile applications with payment integration.",
         "skills": ["Android", "Java", "RDBMS", "AI/ML"],
