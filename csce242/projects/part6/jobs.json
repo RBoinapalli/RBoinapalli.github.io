@@ -61,7 +61,7 @@
     },
     {
         "_id": 7,
-        "img": "cybersecurity.png",
+        "img": "cubersecurity.png",
         "title": "Cyber Security Specialist",
         "description": "Handle security compliance and IAM services in a hybrid cloud environment.",
         "skills": ["ISO 27001", "IAM", "Hybrid Cloud", "Compliance"],
