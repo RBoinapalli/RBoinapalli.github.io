@@ -19,6 +19,48 @@ document.querySelectorAll('.dropdown-btn').forEach(button => {
     });
 });
 
+// Function to send the email
+const sendEmail = async (json) => {
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: json
+        });
+
+        return response;
+    } catch (error) {
+        console.log(error);
+        document.getElementById("result").innerHTML = "Sorry, your message couldn't be sent.";
+    }
+};
+
+// Form submission handler
+document.getElementById("contact-form").onsubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+    const result = document.getElementById("result");
+    
+    result.innerHTML = "Sending...";
+
+    const httpResult = await sendEmail(json);
+
+    if (httpResult.status === 200) {
+        result.innerHTML = "Message successfully sent!";
+        form.reset(); // Optional: Resets the form after successful submission
+    } else {
+        result.innerHTML = "Sorry, your message couldn't be sent.";
+    }
+};
+
+
 // Function to toggle job details
 const toggleJobDetails = (jobId) => {
     const jobDetails = document.getElementById(jobId);

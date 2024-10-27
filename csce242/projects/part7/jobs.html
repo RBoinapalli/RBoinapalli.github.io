@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global IT Consultants - Jobs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src = "images/logo.png">
+            <h1>Global IT Consultants</h1>
+        </div>
+        <nav>
+            <button class="nav-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="jobs">
+        <div class="jobs-banner">
+            <h2>Jobs</h2>
+        </div>
+        <div id="jobs-list" class="jobs-list">
+            <!-- Job sections will be added here -->
+        </div>
+    </section>
+
+    <!-- Apply form modal -->
+    <div id="apply-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Apply for <span id="job-title"></span></h3>
+            <form id="apply-form" onsubmit="submitApplication(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="major">Major:</label>
+                <input type="text" id="major" name="major" required>
+                <label for="position">Position Applied:</label>
+                <input type="text" id="position" name="position" readonly>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank you message -->
+    <div id="thank-you-message" class="modal">
+        <div class="modal-content">
+            <h3>Thank you for applying!</h3>
+            <button onclick="closeThankYou()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
