@@ -557,6 +557,16 @@ section {
     .badge, .vision, .mission, .goal {
         width: 80%;
     }
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact-form, #map {
+        min-width: unset; /* Reset minimum width */
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 20px; /* Add space between form and map */
+    }
 
     .services-image {
         width: 100%;
